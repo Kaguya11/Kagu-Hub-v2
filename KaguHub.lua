@@ -1,4 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
 local Window = OrionLib:MakeWindow({Name = "Kagu Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local Tab = Window:MakeTab({
@@ -94,3 +95,47 @@ Tab:AddButton({
   	end    
 })
 
+Tab:AddButton({
+	Name = "Viribus(PC and Mobile)",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ViribusOwner/Viribus/main/Loader", true))()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Pet Simulator X",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Script for Pet Simulator X"
+})
+
+Tab:AddButton({
+	Name = "Jmes(PC and Mobile)",
+	Callback = function()
+		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/jmesfo0/RobloxScripts/main/psx-jmes.lua%22))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Project WD(PC and Mobile)",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Main.lua%22))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "MilkyHub(PC and Mobile)",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Flxry/Main/MilkyHub/Pet%20Simulator%20X%22))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "CatalystHub(PC and Mobile)",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/destylol/catalyst/itachi/main.lua%27))()
+  	end    
+})
