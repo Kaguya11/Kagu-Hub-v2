@@ -100,20 +100,20 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "Project WD(PC and Mobile)",
 	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Main.lua%22"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Main.lua"))()
   	end    
 })
 
 Tab:AddButton({
 	Name = "MilkyHub(PC and Mobile)",
 	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Flxry/Main/MilkyHub/Pet%20Simulator%20X%22"))()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/Flxry/Main/MilkyHub/Pet%20Simulator%20X%22'))()
   	end    
 })
 
 Tab:AddButton({
 	Name = "CatalystHub(PC and Mobile)",
 	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/destylol/catalyst/itachi/main.lua%27"))()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/destylol/catalyst/itachi/main.lua'))()
   	end    
 })
