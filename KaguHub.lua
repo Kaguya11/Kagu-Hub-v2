@@ -70,7 +70,8 @@ Tab:AddButton({
 	Name = "Esp MM2(PC and Mobile)",
 	Callback = function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaguya11/esp-script-mm2/main/espmm2.lua"))()
-})   
+	end
+})
 
 
 Tab:AddButton({
@@ -91,13 +92,6 @@ local Section = Tab:AddSection({
 })
 
 Tab:AddButton({
-	Name = "Jmes(PC and Mobile)",
-	Callback = function()
-		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/jmesfo0/RobloxScripts/main/psx-jmes.lua"))()
-  	end    
-})
-
-Tab:AddButton({
 	Name = "Project WD(PC and Mobile)",
 	Callback = function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Main.lua"))()
@@ -105,15 +99,15 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = "MilkyHub(PC and Mobile)",
+	Name = "CatalystHub(PC and Mobile)",
 	Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/Flxry/Main/MilkyHub/Pet%20Simulator%20X%22'))()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/destylol/catalyst/itachi/main.lua'))()
   	end    
 })
 
 Tab:AddButton({
-	Name = "CatalystHub(PC and Mobile)",
+	Name = "Jmes(PC and Mobile)",
 	Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/destylol/catalyst/itachi/main.lua'))()
+		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/jmesfo0/RobloxScripts/main/psx-jmes.lua"))()
   	end    
 })
