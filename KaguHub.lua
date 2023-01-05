@@ -207,3 +207,27 @@ OrionLib:MakeNotification({
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
+
+local Tab = Window:MakeTab({
+	Name = "Bed Wars",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Script for Bed Wars"
+})
+
+Tab:AddButton({
+	Name = "Bed Wars Hub(PC and Mobile)",
+	Callback = function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/b8YF9b2A"))()
+  	end    
+})
+
+OrionLib:MakeNotification({
+	Name = "Kagu Hub",
+	Content = "Bed Wars loaded",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
