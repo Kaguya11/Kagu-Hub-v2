@@ -1,6 +1,25 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Kagu Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Kagu Hub", HidePremium = false, IntroText = "Kagu Hub", SaveConfig = true, ConfigFolder = "OrionTest"})
+
+OrionLib:MakeNotification({
+	Name = "Kagu Hub",
+	Content = "Kagu Hub loaded",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+local Tab = Window:MakeTab({
+	Name = "Info",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddLabel("Hello users of my script, here is how you can contact me,good use.")
+
+Tab:AddLabel("Discord:Kaguya#9652")
+
+Tab:AddLabel("Telegram channel:Kaguya X Script")
 
 local Tab = Window:MakeTab({
 	Name = "Blox Fruit",
@@ -19,11 +38,25 @@ Tab:AddButton({
   	end    
 })
 
+OrionLib:MakeNotification({
+	Name = "Kagu Hub",
+	Content = "Mukuro Hub loaded",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
 Tab:AddButton({
 	Name = "TweedLeak(PC and Mobile)",
 	Callback = function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaQLeak/Scripts/main/Blox-Fruits-UpdateV1"))()
   	end    
+})
+
+OrionLib:MakeNotification({
+	Name = "Kagu Hub",
+	Content = "TweedLeak loaded",
+	Image = "rbxassetid://4483345998",
+	Time = 5
 })
 
 Tab:AddButton({
@@ -33,11 +66,25 @@ Tab:AddButton({
   	end    
 })
 
+OrionLib:MakeNotification({
+	Name = "Kagu Hub",
+	Content = "Fiend Hub loaded",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
 Tab:AddButton({
 	Name = "Zen Hub(PC and Mobile)",
 	Callback = function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/Loader", true))()
   	end    
+})
+
+OrionLib:MakeNotification({
+	Name = "Kagu Hub",
+	Content = "Zen Hub loaded",
+	Image = "rbxassetid://4483345998",
+	Time = 5
 })
 
 local Tab = Window:MakeTab({
@@ -59,11 +106,25 @@ local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or
   	end    
 })
 
+OrionLib:MakeNotification({
+	Name = "Kagu Hub",
+	Content = "Eclipse Hub loaded",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
 Tab:AddButton({
 	Name = "MM2 Script(PC and Mobile)",
 	Callback = function()
 		loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
   	end    
+})
+
+OrionLib:MakeNotification({
+	Name = "Kagu Hub",
+	Content = "Script MM2 loaded",
+	Image = "rbxassetid://4483345998",
+	Time = 5
 })
 
 Tab:AddButton({
@@ -73,12 +134,26 @@ Tab:AddButton({
 	end
 })
 
+OrionLib:MakeNotification({
+	Name = "Kagu Hub",
+	Content = "Esp MM2 loaded",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
 
 Tab:AddButton({
 	Name = "Viribus(PC and Mobile)",
 	Callback = function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/ViribusOwner/Viribus/main/Loader", true))()
   	end    
+})
+
+OrionLib:MakeNotification({
+	Name = "Kagu Hub",
+	Content = "Viribus Hub loaded",
+	Image = "rbxassetid://4483345998",
+	Time = 5
 })
 
 local Tab = Window:MakeTab({
@@ -98,11 +173,25 @@ Tab:AddButton({
   	end    
 })
 
+OrionLib:MakeNotification({
+	Name = "Kagu Hub",
+	Content = "Project WD loaded",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
 Tab:AddButton({
-	Name = "CatalystHub(PC and Mobile)",
+	Name = "Catalyst Hub(PC and Mobile)",
 	Callback = function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/destylol/catalyst/itachi/main.lua'))()
   	end    
+})
+
+OrionLib:MakeNotification({
+	Name = "Kagu Hub",
+	Content = "Catalyst Hub loaded",
+	Image = "rbxassetid://4483345998",
+	Time = 5
 })
 
 Tab:AddButton({
@@ -110,4 +199,11 @@ Tab:AddButton({
 	Callback = function()
 		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/jmesfo0/RobloxScripts/main/psx-jmes.lua"))()
   	end    
+})
+
+OrionLib:MakeNotification({
+	Name = "Kagu Hub",
+	Content = "Jmes loaded",
+	Image = "rbxassetid://4483345998",
+	Time = 5
 })
