@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-
-local Window = OrionLib:MakeWindow({Name = "Kagu Hub", HidePremium = false, IntroText = "Kagu Hub", SaveConfig = true, ConfigFolder = "OrionTest"})
+local Player = game.Players.LocalPlayer
+local Window = OrionLib:MakeWindow({Name = "Kagu Hub", HidePremium = false, IntroText = "Key System Kagu Hub", SaveConfig = true, ConfigFolder = "OrionTest"})
 
 OrionLib:MakeNotification({
 	Name = "Kagu Hub",
@@ -9,141 +9,54 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
+_G.Key = "Kaguya"
+_G.KeyInput = "string"
+
+function MakeScripthub()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaguya11/Kagu-Hub-v2/main/KaguHub.lua"))()
+end
+
+function CorrectKeyNotification()
+    OrionLib:MakeNotification({
+        Name = "Correct Key!",
+        Content = "You have entered the correct key!",
+	    Image = "rbxassetid://4483345998",
+	    Time = 5
+    })
+end
+
+function InCorrectKeyNotification()
+    OrionLib:MakeNotification({
+        Name = "InCorrect Key!",
+        Content = "You have entered the incorrect key!",
+	    Image = "rbxassetid://4483345998",
+	    Time = 5
+    })
+end
+
 local Tab = Window:MakeTab({
-	Name = "Info",
+	Name = "Key",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
-Tab:AddLabel("Hello users of my script, here is how you can contact me,good use.")
-
-Tab:AddLabel("Discord:Kaguya#9652")
-
-Tab:AddLabel("Telegram channel:Kaguya X Script")
-
-local Tab = Window:MakeTab({
-	Name = "Blox Fruit",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-local Section = Tab:AddSection({
-	Name = "Script for Blox Fruit"
+Tab:AddTextbox({
+	Name = "Enter Key",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		_G.KeyInput = Value
+	end	  
 })
 
 Tab:AddButton({
-	Name = "Mukuro Hub(PC)",
+	Name = "CheckKey",
 	Callback = function()
-		loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
+		if _G.KeyInput == _G.Key then 
+        MakeScripthub()
+        CorrectKeyNotification()
+        else
+            InCorrectKeyNotification()
+        end
   	end    
 })
-
-Tab:AddButton({
-	Name = "TweedLeak(PC and Mobile)",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaQLeak/Scripts/main/Blox-Fruits-UpdateV1"))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Fiend Hub(PC and Mobile)",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Fiend1sh/FiendMain/main/FiendMainLoader", true))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Zen Hub(PC and Mobile)",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/Loader", true))()
-  	end    
-})
-
-local Tab = Window:MakeTab({
-	Name = "Murder Mystery 2",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-local Section = Tab:AddSection({
-	Name = "Script for Murder Mystery 2"
-})
-
-Tab:AddButton({
-	Name = "Eclipse Hub(PC)",
-	Callback = function()
-		getgenv().mainKey = "nil"
-
-local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https\58//api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "MM2 Script(PC and Mobile)",
-	Callback = function()
-		loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Esp MM2(PC and Mobile)",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaguya11/esp-script-mm2/main/espmm2.lua"))()
-	end
-})
-
-Tab:AddButton({
-	Name = "Viribus(PC and Mobile)",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ViribusOwner/Viribus/main/Loader", true))()
-  	end    
-})
-
-local Tab = Window:MakeTab({
-	Name = "Pet Simulator X",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-local Section = Tab:AddSection({
-	Name = "Script for Pet Simulator X"
-})
-
-Tab:AddButton({
-	Name = "Project WD(PC and Mobile)",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Main.lua"))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Catalyst Hub(PC and Mobile)",
-	Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/destylol/catalyst/itachi/main.lua'))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Jmes(PC and Mobile)",
-	Callback = function()
-		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/jmesfo0/RobloxScripts/main/psx-jmes.lua"))()
-  	end    
-})
-
-local Tab = Window:MakeTab({
-	Name = "Bed Wars",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-local Section = Tab:AddSection({
-	Name = "Script for Bed Wars"
-})
-
-Tab:AddButton({
-	Name = "Bed Wars Hub(PC and Mobile)",
-	Callback = function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/b8YF9b2A"))()
-  	end    
-})
-
