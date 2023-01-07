@@ -13,7 +13,7 @@ _G.Key = "Kaguya"
 _G.KeyInput = "string"
 
 function MakeScripthub()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaguya11/Kagu-Hub-v2/main/KaguHub.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaguya11/KaguHub.lua/main/KaguHub.lua"))()
 end
 
 function CorrectKeyNotification()
