@@ -3,8 +3,8 @@ local Player = game.Players.LocalPlayer
 local Window = OrionLib:MakeWindow({Name = "Kagu Hub", HidePremium = false, IntroText = "Key System Kagu Hub", SaveConfig = true, ConfigFolder = "OrionTest"})
 
 OrionLib:MakeNotification({
-	Name = "Kagu Hub",
-	Content = "Kagu Hub loaded",
+	Name = "Welcome",
+	Content = "Key System Kagu Hub loaded",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
