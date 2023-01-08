@@ -9,7 +9,7 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
-_G.Key = "Kaguya"
+_G.Key = "KaguyaXScript"
 _G.KeyInput = "string"
 
 function MakeScripthub()
