@@ -4,12 +4,12 @@ local Window = OrionLib:MakeWindow({Name = "Kagu Hub", HidePremium = false, Intr
 
 OrionLib:MakeNotification({
 	Name = "Welcome",
-	Content = "Key System Kagu Hub loaded",
+	Content = " Key System Kagu Hub loaded",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
 
-_G.Key = "KaguyaXScript"
+_G.Key = "BestChannelKaguyaXScript"
 _G.KeyInput = "string"
 
 function MakeScripthub()
@@ -60,3 +60,19 @@ Tab:AddButton({
         end
   	end    
 })
+
+Tab:AddButton({
+	Name = "Get Key",
+	Callback = function()
+		setclipboard("https://link-hub.net/565293/get-key-kagu-hub")
+	end
+})
+
+function AddButtonNotification()
+    OrionLib:MakeNotification({
+        Name = "Key System Kagu Hub",
+        Content = "Link copied, paste it into your browser",
+	    Image = "rbxassetid://4483345998",
+	    Time = 5
+    })
+end
