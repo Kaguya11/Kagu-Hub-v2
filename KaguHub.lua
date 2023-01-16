@@ -68,7 +68,7 @@ Tab:AddButton({
 	end
 })
 
-function AddButtonNotification()
+function setclipboardNotification()
     OrionLib:MakeNotification({
         Name = "Key System Kagu Hub",
         Content = "Link copied, paste it into your browser",
