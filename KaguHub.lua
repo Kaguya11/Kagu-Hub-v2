@@ -64,7 +64,7 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "Get Key",
 	Callback = function()
-		setclipboard("https://link-hub.net/565293/get-key-kagu-hub")
+		setclipboard("https://link-hub.net/565293/get-key-checkpoint-1")
 	end
 })
 
