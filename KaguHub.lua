@@ -9,7 +9,7 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
-_G.Key = "ezkey"
+_G.Key = "123"
 _G.KeyInput = "string"
 
 function MakeScripthub()
